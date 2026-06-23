@@ -12,7 +12,7 @@ export function Process() {
       <div className="container-px">
         <Reveal>
           <span className="eyebrow">
-            <span className="h-px w-8 bg-accent" /> How I Work
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" /> How I Work
           </span>
           <h2 className="section-title mt-4 max-w-xl text-balance">
             From idea to launch, a process that ships.

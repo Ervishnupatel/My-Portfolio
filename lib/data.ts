@@ -178,7 +178,7 @@ export const experience = [
     {
     company: "UnifyXpers",
     role: "Python Developer Intern",
-    period: "may 2026 — august 2026"
+    period: "May 2026 — Aug 2026",
     description:
       "Built responsive, interactive web interfaces from real-world briefs and shipped them on schedule.",
     achievements: [
@@ -186,6 +186,7 @@ export const experience = [
       "Translated design specs into pixel-accurate, responsive layouts",
     ],
   },
+  
   {
     company: "Cognifyz Technologies",
     role: "Front-End Web Development Intern",
@@ -266,10 +267,10 @@ export const testimonials = [
 ];
 
 export const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#work", label: "Work" },
-  { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
-  { href: "#process", label: "Process" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#work", label: "Work" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#process", label: "Process" },
+  { href: "/#contact", label: "Contact" },
 ];

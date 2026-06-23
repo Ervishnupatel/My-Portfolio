@@ -36,7 +36,7 @@ export function Navbar() {
         }`}
       >
         <nav className="container-px flex h-16 items-center justify-between sm:h-20">
-          <a href="#home" className="font-display text-lg font-semibold tracking-tight">
+          <a href="/#home" className="font-display text-lg font-semibold tracking-tight">
             {initials}
             <span className="text-accent">.</span>
           </a>
@@ -56,7 +56,7 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <a
-              href="#contact"
+              href="/#contact"
               className="hidden rounded-full bg-fg px-5 py-2 text-sm font-medium text-bg transition-transform hover:-translate-y-0.5 sm:inline-flex"
             >
               Let&apos;s talk
@@ -114,7 +114,7 @@ export function Navbar() {
             </ul>
             <div className="container-px mt-10">
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="inline-flex rounded-full bg-accent px-6 py-3 text-sm font-medium text-white"
               >

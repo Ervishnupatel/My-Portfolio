@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container-px py-16">
         <div className="flex flex-col justify-between gap-10 lg:flex-row">
           <div className="max-w-sm">
-            <a href="#home" className="font-display text-2xl font-semibold tracking-tight">
+            <a href="/#home" className="font-display text-2xl font-semibold tracking-tight">
               {profile.name}
               <span className="text-accent">.</span>
             </a>
@@ -68,7 +68,7 @@ export function Footer() {
             © {new Date().getFullYear()} {profile.fullName}. All rights reserved.
           </p>
           <a
-            href="#home"
+            href="/#home"
             className="group inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-fg"
           >
             Back to top

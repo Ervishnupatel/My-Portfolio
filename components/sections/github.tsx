@@ -46,7 +46,7 @@ export function GithubSection() {
           <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
             <Reveal>
               <span className="eyebrow">
-                <span className="h-px w-8 bg-accent" /> Open Source
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Open Source
               </span>
               <h2 className="section-title mt-4 max-w-md text-balance">
                 Code, committed consistently.

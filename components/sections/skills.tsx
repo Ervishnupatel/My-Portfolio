@@ -12,7 +12,7 @@ export function Skills() {
           <Reveal>
             <div className="lg:sticky lg:top-28">
               <span className="eyebrow">
-                <span className="h-px w-8 bg-accent" /> Capabilities
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Capabilities
               </span>
               <h2 className="section-title mt-4 text-balance">
                 A toolkit for the whole stack.

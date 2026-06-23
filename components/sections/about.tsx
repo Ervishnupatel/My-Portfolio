@@ -10,7 +10,7 @@ export function About() {
       <div className="container-px">
         <Reveal>
           <span className="eyebrow">
-            <span className="h-px w-8 bg-accent" /> About
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" /> About
           </span>
         </Reveal>
 
