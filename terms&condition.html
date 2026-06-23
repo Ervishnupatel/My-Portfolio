@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Vishnu Patel</title>
+    <style>
+        /* Portfolio Theme Variables */
+        :root {
+            /* --bg: #030508; 
+            --card-bg: rgba(14, 22, 33, 0.8);
+            --accent: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+            --text-dim: #94a3b8;
+            --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%); */
+
+              --bg: #112035e4; 
+  /* --card: rgba(15, 18, 25, 0.7); */
+  --accent: #497aeb;
+  --accent-purple: #4d2d5b;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+           --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: 'Inter', monospace; /* Kept monospace for that legal/tech feel */
+            color: var(--text);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        /* ==========================================
+            ULTRA HIGHLIGHTED HEADER (PILL STYLE)
+           ========================================== */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .header-pill {
+            background: var(--gradient) !important;
+            padding: 20px 60px;
+            border-radius: 100px; 
+            text-align: center;
+            box-shadow: 
+                0 15px 45px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(157, 80, 187, 0.3);
+            transition: transform 0.3s ease;
+            width: 500%;
+        }
+
+        .header-pill h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+        }
+
+        /* ==========================================
+            TERMS CONTAINER (GLASS-MORPHISM)
+           ========================================== */
+        .fullterms {
+            max-width: 850px;
+            width: 100%;
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .subhead {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin: 30px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 15px;
+        }
+
+        /* Text Content */
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: var(--text-dim);
+        }
+
+        strong {
+            font-weight: bold;
+           color:  rgba(0, 208, 255, 0.664);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-dim);
+        }
+
+        /* Custom Bullet points using gradient */
+        ul li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 5px;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .allrights {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text);
+            opacity: 0.8;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .fullterms {
+                padding: 30px 20px;
+            }
+            .header-pill {
+                padding: 15px 30px;
+                width: 100%;
+            }
+            .header-pill h2 {
+                font-size: 1.2rem;
+            }
+            .subhead {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-pill">
+            <h2 class="head">Terms and Conditions</h2>
+        </div>
+    </header>
+
+    <section class="fullterms">
+        <p>
+            This website and all of its contents—including but not limited to personal images, certificates, marksheets, project data, social media links, and written content—are the exclusive intellectual property of <strong>Vishnu Patel</strong> and are protected under the <strong>Indian Copyright Act, 1957</strong> and <strong>Article 300A of the Constitution of India</strong>.
+        </p>
+
+        <h3 class="subhead">Restrictions</h3>
+        <ul>
+            <li>No person or organization is permitted to download, reproduce, copy, forward, repost, or distribute any personal image, including photographs, marksheets, certificates, or any other thing from this site without written consent or permission.</li>
+            <li>Sharing of my social media handles, links, or usernames from this portfolio to any third-party platform, group, or person without permission is strictly prohibited.</li>
+            <li>The data and content provided on this site must not be used for any non-professional or unauthorized purpose.</li>
+            <li>Any form of misuse, impersonation, or unauthorized use of my personal data, images, or projects will be considered a violation of copyright and privacy laws and may result in legal action.</li>
+        </ul>
+
+        <h3 class="subhead">Legal Notice</h3>
+        <p>
+            Any unauthorized use of this website's content is a violation of the <strong>Copyright Act, 1957</strong> (Sections 13, 14, 51, and 63) and infringes upon my constitutional right under <strong>Article 300A</strong>, which protects against unlawful deprivation of property, including intellectual property.
+        </p>
+
+        <p>
+            Legal action may be taken against individuals or entities found violating these terms.
+        </p>
+
+        <p class="allrights"><strong>&copy; 2025 Vishnu Patel. All Rights Reserved.</strong></p>
+    </section>
+
+</body>
+</html>

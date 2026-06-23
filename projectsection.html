@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Vishnu Patel</title>
+    <style>
+        /* Portfolio Theme Variables */
+        :root {
+            /* --bg: #030508; 
+            --card-bg: rgba(14, 22, 33, 0.8);
+            --accent: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+            --text-dim: #94a3b8; */
+
+              --bg: #112035e4; 
+  /* --card: rgba(15, 18, 25, 0.7); */
+  --accent: #497aeb;
+  --accent-purple: #4d2d5b;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+            --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text);
+            padding-top: 60px;
+            overflow-x: hidden;
+        }
+
+        /* ==========================================
+            ULTRA HIGHLIGHTED HEADER 
+           ========================================== */
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+            padding: 0 20px;
+            background: transparent;
+        }
+
+        .header-pill {
+            background: var(--gradient) !important;
+            padding: 20px 70px;
+            border-radius: 100px; 
+            display: inline-block;
+            text-align: center;
+            box-shadow: 
+                0 15px 45px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(157, 80, 187, 0.3);
+            transition: transform 0.3s ease;
+            width: 70%;
+        }
+
+
+        .head h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ==========================================
+            PROJECTS GRID & CARDS
+           ========================================== */
+        .allProjects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+            padding: 0 20px 5rem 20px;
+        }
+
+        .projectCard {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(0, 208, 255, 0.325);
+            width: 30%;
+            min-width: 320px;
+            border-radius: 24px;
+            padding: 1.5rem;
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .projectCard:hover {
+            transform: translateY(-12px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 210, 255, 0.2);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .upperIMGproject {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .projectImage {
+            max-height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lowerproject {
+            flex-grow: 1;
+        }
+
+        .lowerproject h1 {
+            font-size: 1.6rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .lowerproject h3 {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--text-dim);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .projectlanguage-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 1rem;
+        }
+
+        .projectlanguage-list h4 {
+            width: 100%;
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .projectlanguage-list li {
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 210, 255, 0.2);
+        }
+
+        /* ==========================================
+            VIEW BUTTONS (MATCHING THE HEADING)
+           ========================================== */
+        .viewprojectsection {
+            display: flex;
+            gap: 12px;
+            margin-top: 2rem;
+            list-style: none;
+        }
+
+        .viewoutput, .viewcode {
+            flex: 1;
+            list-style: none;
+        }
+
+        .viewbutton {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            
+            /* Transparent style default */
+            color: var(--accent);
+            background: rgba(0, 210, 255, 0.05);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+        }
+
+        .viewbutton:hover {
+            background: var(--gradient) !important;
+            color: white !important;
+            border-color: transparent;
+            box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        /* ==========================================
+            MOBILE RESPONSIVENESS
+           ========================================== */
+        @media (max-width: 768px) {
+            .header-pill { padding: 15px 30px; width: 90%; }
+            .head h1 { font-size: 1.6rem; }
+            .projectCard { width: 90%; margin: 1rem 0; }
+            .allProjects { padding: 0 10px 3rem 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="head">
+        <div class="header-pill">
+            <h1>my projects</h1>
+        </div>
+    </section>
+
+    <section class="allProjects">
+
+        <div class="projectCard">
+            <section class="upperIMGproject">
+                <img class="projectImage" src="Weathergo_ScreenShort.png" alt="Project Image">
+            </section>
+            <section class="lowerproject">
+                <h1>Weather Go</h1>
+                <h3>A weather forecasting web application built using HTML, CSS and JavaScript that fetches real-time data through a weather API. It provides accurate temperature and humidity with a responsive interface.</h3>
+                
+                <ul class="projectlanguage-list">
+                    <h4>Languages</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section> 
+            <section class="viewprojectsection">
+                <div class="viewoutput">
+                    <li><a class="viewbutton" href="https://weather-goo.netlify.app/">View Project</a></li>
+                </div>
+                <div class="viewcode">
+                    <li><a class="viewbutton" href="https://github.com/Ervishnupatel/Weather-Go">View Code</a></li>
+                </div>
+            </section>
+        </div> 
+
+        <div class="projectCard">
+            <section class="upperIMGproject">
+                <img class="projectImage" src="greenland_screenshort.png" alt="Project Image">
+            </section>
+            <section class="lowerproject">
+                <h1>Greenland Infra</h1>
+                <h3>A sleek architectural portfolio site built to present projects visually, combining minimal design with impactful storytelling.</h3>
+                
+                <ul class="projectlanguage-list">
+                    <h4>Languages</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section> 
+            <section class="viewprojectsection">
+                <div class="viewoutput">
+                    <li><a class="viewbutton" href="https://greenland-infra.netlify.app/">View Project</a></li>
+                </div>
+                <div class="viewcode">
+                    <li><a class="viewbutton" href="https://github.com/Ervishnupatel/Greenland-Infra">View Code</a></li>
+                </div>
+            </section>
+        </div> 
+
+        <div class="projectCard">
+            <section class="upperIMGproject">
+                <img class="projectImage" src="rpcscreenshort.png" alt="Project Image">
+            </section>
+            <section class="lowerproject">
+                <h1>Rock Paper Scissors</h1>
+                <h3>A fun game challenge against the computer featuring smooth animations, responsive design, and an instant feedback score board.</h3>
+                
+                <ul class="projectlanguage-list">
+                    <h4>Languages</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section> 
+            <section class="viewprojectsection">
+                <div class="viewoutput">
+                    <li><a class="viewbutton" href="https://rpcvishnu.netlify.app//">View Project</a></li>
+                </div>
+                <div class="viewcode">
+                    <li><a class="viewbutton" href="https://github.com/Ervishnupatel/Rock-Paper-Scissors-Game">View Code</a></li>
+                </div>
+            </section>
+        </div> 
+
+        <div class="projectCard">
+            <section class="upperIMGproject">
+                <img class="projectImage" src="netflixscreenshort.png" alt="Project Image">
+            </section>
+            <section class="lowerproject">
+                <h1>Netflix Clone</h1>
+                <h3>A practice real-world UI implementation project, strengthening understanding of modern web technologies and solving UI design challenges.</h3>
+                
+                <ul class="projectlanguage-list">
+                    <h4>Languages</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Desktop Optimized</li>
+                </ul>
+            </section> 
+            <section class="viewprojectsection">
+                <div class="viewoutput">
+                    <li><a class="viewbutton" href="https://net2flixclone-vishnupatel.netlify.app//">View Project</a></li>
+                </div>
+                <div class="viewcode">
+                    <li><a class="viewbutton" href="comingsoon.html">View Code</a></li>
+                </div>
+            </section>
+        </div> 
+
+        <div class="projectCard">
+            <section class="upperIMGproject">
+                <img class="projectImage" src="personalionfoscreenshort.png" alt="Project Image">
+            </section>
+            <section class="lowerproject">
+                <h1>CloudCapture</h1>
+                <h3>Structured form interface with data validation and secure transmission, ensuring efficient handling and system scalability.</h3>
+                
+                <ul class="projectlanguage-list">
+                    <h4>Languages</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section> 
+            <section class="viewprojectsection">
+                <div class="viewoutput">
+                    <li><a class="viewbutton" href="https://form-vishnupatel.netlify.app//">View Project</a></li>
+                </div>
+                <div class="viewcode">
+                    <li><a class="viewbutton" href="comingsoon.html">View Code</a></li>
+                </div>
+            </section>
+        </div> 
+
+        <div class="projectCard">
+            <section class="upperIMGproject">
+                <img class="projectImage" src="darkportfolio_img.png" alt="Project Image">
+            </section>
+            <section class="lowerproject">
+                <h1>My Portfolio</h1>
+                <h3>A comprehensive overview of my professional journey, including certifications, achievements, and social media integration.</h3>
+                
+                <ul class="projectlanguage-list">
+                    <h4>Languages</h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section> 
+            <section class="viewprojectsection">
+                <div class="viewoutput">
+                    <li><a class="viewbutton" href="https://vishnu-patels.netlify.app//">View Project</a></li>
+                </div>
+                <div class="viewcode">
+                    <li><a class="viewbutton" href="">View Code</a></li>
+                </div>
+            </section>
+        </div>
+
+    </section>
+</body>
+</html>

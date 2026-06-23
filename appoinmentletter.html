@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Marksheets - Vishnu Patel</title>
+    <style>
+        /* Portfolio Theme Variables */
+        :root {
+            /* --bg: #030508; 
+            --card-bg: rgba(14, 22, 33, 0.8);
+            --accent: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+            --text-dim: #94a3b8;
+         
+            --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%); */
+
+              --bg: #112035e4; 
+
+  --accent: #497aeb;
+  --accent-purple: #4d2d5b;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+           --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            padding-top: 60px; 
+        }
+
+        /* ==========================================
+            ENHANCED HIGHLIGHTED HEADER 
+           ========================================== */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+            padding: 0 20px;
+        }
+
+        /* Highlighted Pill Background */
+        .header-pill {
+            background: var(--gradient) !important; /* Button-style background */
+            padding: 20px 60px;
+            border-radius: 100px; 
+            display: inline-block;
+            text-align: center;
+            
+            /* Powerful Glow Shadow */
+            box-shadow: 
+                0 15px 45px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(157, 80, 187, 0.3);
+            
+            transition: transform 0.3s ease;
+        }
+
+        .header-pill:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 210, 255, 0.6);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important; /* Forces white text over gradient */
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ==========================================
+            SECTION & CARDS
+           ========================================== */
+        .allmarksheets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 5rem;
+        }
+        
+        .marksheetcard {
+            background-color: var(--card-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 210, 255, 0.2); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            height: 16rem;
+            width: 28rem;
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            text-align: center;
+        }
+
+        .marksheetcard:hover {
+            transform: translateY(-10px) scale(1.03);
+            border: 1px solid var(--accent);
+            box-shadow: 0 0 35px rgba(0, 210, 255, 0.3);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .marksheet-info h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .marksheet-info h4 {
+            color: var(--text-dim);
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        .view-button {
+            display: inline-block;
+            padding: 12px 28px;
+            color: var(--accent);
+            background-color: rgba(0, 210, 255, 0.05);
+            border: 2px solid rgba(0, 210, 255, 0.3);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .view-button:hover {
+            background: var(--gradient) !important;
+            color: white !important;
+            box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+            border-color: transparent;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .header-pill { padding: 15px 30px; width: 90%; }
+            header h1 { font-size: 1.1rem; }
+            .marksheetcard { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-pill">
+            <h1>My Appointment/Offer Letter's</h1>
+        </div>
+    </header>
+    <main>
+         <section class="allmarksheets">
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>Cognifyz Technologies</h3>
+                        <h4>Front-end Web Development Internship</h4>
+                        <a href="cognifyz_internship-offer.pdf" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+
+                <!-- <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>Elevate Labs</h3>
+                        <h4>Offer Letter</h4>
+                        <a href="offerLetter_evalvatelabs.pdf" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div> -->
+
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>Let's Upgrade</h3>
+                        <h4>Appointment Letter</h4>
+                        <a href="appointment letter - vishnu  patel .pdf" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h1 style="background:none; -webkit-text-fill-color: rgba(255,255,255,0.1); letter-spacing: 5px; font-size: 1.5rem;">Coming Soon</h1>
+                    </div>
+                </div>
+         </section>
+    </main>
+</body>
+</html>

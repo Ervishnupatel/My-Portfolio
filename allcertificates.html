@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Certificates | Vishnu Mukesh Patel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* --bg: #030508; 
+            --card: rgba(15, 18, 25, 0.7);
+            --accent: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+            --text-dim: #94a3b8;
+            --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%); */
+
+              --bg: #112035e4; 
+  /* --card: rgba(15, 18, 25, 0.7); */
+  --accent: #497aeb;
+  --accent-purple: #4d2d5b;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+           --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding-top: 60px; /* Space for the new pill header */
+            padding-bottom: 50px;
+            overflow-x: hidden;
+        }
+
+        /* --- New Ultra Highlighted Header --- */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5rem;
+            padding: 0 20px;
+            background: none; /* Removed old gradient background */
+        }
+
+        .header-pill {
+            background: var(--gradient) !important;
+            padding: 20px 70px;
+            border-radius: 100px; 
+            display: inline-block;
+            text-align: center;
+            box-shadow: 
+                0 15px 45px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(157, 80, 187, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+  
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* --- Certificate Card Styling --- */
+        .certificate-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(0, 210, 255, 0.2) !important;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            padding: 30px;
+            border-radius: 24px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent) !important;
+            background: rgba(0, 210, 255, 0.05) !important;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 210, 255, 0.2);
+        }
+
+        .certificate-info h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .certificate-info p {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        .certificate-info strong {
+            color: var(--text);
+        }
+
+        /* --- View Button --- */
+        .view-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            color: #fff;
+            background: var(--gradient) !important;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+        }
+
+        .view-button:hover {
+            filter: brightness(1.2);
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .header-pill { padding: 15px 30px; width: 90%; }
+            header h1 { font-size: 1.5rem; }
+
+            .certificate-card {
+                width: calc(100% - 40px);
+                margin: 1.5rem 20px;
+                padding: 20px;
+            }
+
+            .certificate-info h3 { font-size: 1.5rem; }
+            .certificate-info p { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-pill">
+            <h1>ALL Certificates</h1>
+        </div>
+    </header>
+                     <!-- 0 certificate ------ -->
+
+     <div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Bit N Build</h3>
+      <p>Issued by <strong>Google Development Students Clubes</strong></p>
+      <p>Date: 20th&21 September 2025</p>
+      <a href="bit n build certificate.pdf" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+          <!-- 1st certificate ------ -->
+
+     <div class="certificate-card">
+    <div class="certificate-info">
+      <h3>AI Skills Passport</h3>
+      <p>Issued by <strong>EY &Microsoft </strong></p>
+      <p>Date: 3 april 2025</p>
+      <a href="microsoft certificate.pdf" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+     <!-- 2nd certificate ------ -->
+  
+       <div class="certificate-card">
+    <div class="certificate-info">
+      <h3>c++ programming </h3>
+      <p>Issued by <strong> SIIT</strong></p>
+      <p>Date: 4 september 2024</p>
+      <a href="siit c++ certificate.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+       <!-- 2.1nd certificate ------ -->
+  
+       <div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Technovent 2025</h3>
+      <p>Issued by <strong> VBVP</strong></p>
+      <p>Date: 4 september 2024</p>
+      <a href="technovent certificate - Copy.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+          <!-- 3rd certificate  -->
+<div class="certificate-card">
+    <div class="certificate-info">
+      <h3>JS Bootcamp</h3>
+      <p>Issued by <strong>Let's Upgrade</strong></p>
+      <p>Date: 26 to 28 March 2025 </p>
+      <a href="javascript bootcamp.pdf" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+    <!-- 4rd certificate  -->
+          <div class="certificate-card">
+    <div class="certificate-info">
+      <h3>c++ Bootcamp </h3>
+      <p>Issued by <strong> Let's Upgrade</strong></p>
+      <p>Date: 1 to3 April 2025</p>
+      <a href="c++ bootcamp.pdf" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+    <!-- 5rd certificate  -->
+<div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Netflix Clone</h3>
+      <p>Issued by <strong> Let's Upgrade</strong></p>
+      <p>Date: 15 to 16 march 2025</p>
+      <a href="netflix clone certificate.pdf" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+
+
+
+      <!-- 6rd certificate  -->
+<div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Scout & Guide</h3>
+      <p>Issued by <strong> MSBSC</strong></p>
+      <p>Date: 27 April 2024</p>
+      <a href="dbs scout certificate.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+        <!-- 7rd certificate  -->
+<div class="certificate-card">
+    <div class="certificate-info">
+      <h3> Patriotic singing </h3>
+      <p>Issued by <strong>Don Bosco School</strong></p>
+      <p>Date: 15 august 2019</p>
+      <a href="dbs singing certificate.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+
+          <!-- 8rd certificate  -->
+<div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Field Demonstration</h3>
+      <p>Issued by <strong>MSEAT</strong></p>
+      <p>Date: 24 January 2019 </p>
+      <a href="msect certificate.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+
+      <!-- 9rd certificate  -->
+<div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Drawing Compition -Camlin</h3>
+      <p>Issued by <strong>PJKS & Camlin</strong></p>
+      <p>year: 2022-2023</p>
+      <a href="camlin.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div>
+
+      <!-- 10nd certificate ------ -->
+  
+       <div class="certificate-card">
+    <div class="certificate-info">
+      <h3>Drawing Compitiion-DOMS</h3>
+      <p>Issued by <strong>PLKS & DOMS</strong></p>
+      <p>Date: 20 september 2019</p>
+      <a href="doms certificate.jpg" target="_blank" class="view-button">View Certificate</a>
+    </div>
+  </div> 
+
+
+
+
+    <div class="certificate-card" style="border: 2px dashed rgba(255,255,255,0.1) !important; background: transparent !important; opacity: 0.6;">
+        <div class="certificate-info">
+            <h3 style="color: var(--text-dim);">Coming Soon!</h3>
+            <p>More achievements on the way.</p>
+        </div>
+    </div>
+
+</body>
+</html>

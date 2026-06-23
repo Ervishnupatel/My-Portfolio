@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Vishnu Patel</title>
+    <style>
+        /* Portfolio Theme Variables */
+        :root {
+            /* --bg: #030508; 
+            --card-bg: rgba(14, 22, 33, 0.8);
+            --accent: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+            --text-dim: #94a3b8;
+            --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%); */
+
+              --bg: #112035e4; 
+  /* --card: rgba(15, 18, 25, 0.7); */
+  --accent: #497aeb;
+  --accent-purple: #4d2d5b;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+           --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* ==========================================
+            COMING SOON CONTAINER
+           ========================================== */
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        /* High-Intensity Highlighted Pill */
+        .header-pill {
+            background: var(--gradient) !important;
+            padding: 20px 60px;
+            border-radius: 100px; 
+            display: inline-block;
+            box-shadow: 
+                0 15px 45px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(157, 80, 187, 0.3);
+            animation: pulse 3s infinite ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 0;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Glass-morphism Subtitle */
+        .status-box {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 210, 255, 0.2);
+            padding: 15px 40px;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--text-dim);
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        /* Back Home Link style */
+        .back-link {
+            margin-top: 20px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            opacity: 0.6;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            letter-spacing: 4px;
+        }
+
+        /* Subtle Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); box-shadow: 0 20px 60px rgba(0, 210, 255, 0.6); }
+            100% { transform: scale(1); }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .header-pill { padding: 15px 30px; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-pill">
+            <h1>Coming Soon!</h1>
+        </div>
+
+        <div class="status-box">
+            <h2>I am working to develop this feature</h2>
+        </div>
+
+        <a href="index.html" class="back-link">← Return to Portfolio</a>
+    </div>
+
+</body>
+</html>

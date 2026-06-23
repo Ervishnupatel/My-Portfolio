@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Marksheets - Vishnu Patel</title>
+    <style>
+        /* Portfolio Theme Variables */
+        :root {
+            /* --bg: #030508; 
+            --card-bg:c;
+            --accent: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+            --text-dim: #94a3b8;
+            --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%); */
+
+              /* Ultra-deep navy-black for a premium feel */
+  --bg: #112035e4; 
+  /* --card: rgba(15, 18, 25, 0.7); */
+  --accent: #497aeb;
+  --accent-purple: #4d2d5b;
+  --text: #ffffff;
+  --text-dim: #94a3b8;
+           --gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d50bb 100%);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            padding-top: 60px;
+        }
+
+        /* ==========================================
+           ULTRA HIGHLIGHTED HEADER (BUTTON-HOVER STYLE)
+           ========================================== */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5rem;
+            padding: 0 20px;
+        }
+
+        .header-pill {
+            /* Intense Gradient Background like the button hover state */
+            background: var(--gradient) !important;
+            padding: 20px 70px;
+            border-radius: 100px; 
+            position: relative;
+            border: none !important; /* No border needed with this bg */
+            
+            /* Powerful Glow Shadow */
+            box-shadow: 
+                0 15px 45px rgba(0, 210, 255, 0.4), 
+                0 0 30px rgba(157, 80, 187, 0.3);
+            
+            text-align: center;
+            transition: transform 0.3s ease;
+            width: 70%;
+        }
+
+        
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            /* White text to pop against the colored background */
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ==========================================
+           MARKSHEET CARDS SECTION
+           ========================================== */
+        .allmarksheets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding-bottom: 6rem;
+        }
+        
+        .marksheetcard {
+            background-color:  rgba(106, 109, 113, 0);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 210, 255, 0.2) !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 210, 255, 0.1);
+            height: 18rem;
+            width: 32rem;
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            text-align: center;
+        }
+
+        .marksheetcard:hover {
+            transform: translateY(-12px) scale(1.02);
+            border-color: var(--accent) !important;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 210, 255, 0.3);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .marksheet-info h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .view-button {
+            display: inline-block;
+            padding: 14px 32px;
+            color: var(--accent);
+            background-color: rgba(0, 210, 255, 0.05);
+            border: 2px solid rgba(0, 210, 255, 0.3);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+        }
+
+        .view-button:hover {
+            background: var(--gradient) !important;
+            color: white !important;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+            border-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+            .header-pill { padding: 15px 30px; width: 90%; }
+            header h1 { font-size: 1.1rem; }
+            .marksheetcard { width: 90%; height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-pill">
+            <h1>My Marksheets</h1>
+        </div>
+    </header>
+
+    <main>
+         <section class="allmarksheets">
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>SSC Marksheet</h3>
+                        <a href="10thmarksheet.jpg" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>Diploma First Semester</h3>
+                        <a href="DIP_1SEM_MARKSHEET.jpg" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>Diploma Second Semester</h3>
+                        <a href="diploma_2nd_Sem_marksheet.jpg" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>Diploma Third Semester</h3>
+                        <a href="3rd_sem_result.pdf" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+
+                <div class="marksheetcard">
+                    <div class="marksheet-info">
+                        <h3>C++ Programming</h3>
+                        <a href="c++_marksheet.jpg" target="_blank" class="view-button">View Marksheet</a>
+                    </div>
+                </div>
+         </section>
+    </main>
+</body>
+</html>
