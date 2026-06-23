@@ -5,14 +5,14 @@ export const profile = {
   headline: "Building digital experiences that people love.",
   subheadline:
     "I'm a developer and designer who turns ideas into fast, elegant, and human-centered products — pairing clean engineering with a strong eye for detail.",
-  location: "Boisar, Maharashtra, India",
+  location: "Maharashtra, India",
   email: "vishnupatelm4@gmail.com",
   phone: "+91 92848 00679",
   whatsapp: "https://wa.me/919284800679",
   github: "https://github.com/Ervishnupatel",
   githubUser: "Ervishnupatel",
-  linkedin: "https://www.linkedin.com/in/vishnu-patel",
-  resume: "/cognifyz-internship.pdf",
+  linkedin: "https://www.linkedin.com/in/vishnu-patel-221517355/",
+  resume: "",
   available: true,
 };
 
@@ -150,15 +150,15 @@ export const projects: Project[] = [
 export const skillGroups = [
   {
     title: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Bootstrap"],
+    items: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Bootstrap"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "Java"],
+    items: ["Node.js", "REST APIs", "Java","Python"],
   },
   {
     title: "Databases",
-    items: ["MySQL", "SQL", "Oracle", "MongoDB"],
+    items: ["MySQL", "SQL", "Oracle", "SupaBase"],
   },
   {
     title: "Languages",
@@ -175,6 +175,17 @@ export const skillGroups = [
 ];
 
 export const experience = [
+    {
+    company: "UnifyXpers",
+    role: "Python Developer Intern",
+    period: "may 2026 — august 2026"
+    description:
+      "Built responsive, interactive web interfaces from real-world briefs and shipped them on schedule.",
+    achievements: [
+      "Delivered multiple back-end and clean, maintainable code",
+      "Translated design specs into pixel-accurate, responsive layouts",
+    ],
+  },
   {
     company: "Cognifyz Technologies",
     role: "Front-End Web Development Intern",
@@ -188,20 +199,9 @@ export const experience = [
     ],
   },
   {
-    company: "Evalvate Labs",
-    role: "Web Development Intern",
-    period: "2025",
-    description:
-      "Contributed to web development tasks, strengthening practical, production-oriented skills.",
-    achievements: [
-      "Worked on hands-on development assignments",
-      "Applied modern web practices to real deliverables",
-    ],
-  },
-  {
     company: "Self-Driven Projects",
     role: "Full-Stack Developer",
-    period: "2024 — Present",
+    period: "2024",
     description:
       "Designed, built and deployed personal products end to end — from UI design to live deployment.",
     achievements: [
